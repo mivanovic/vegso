@@ -1,18 +1,37 @@
+{% load staticfiles %}
+
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="hr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>{% block title %}{% endblock title %}</title>
+        <meta name="description" content="{% block description %}{% endblock description %}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'css/base.min.css' %}">
+
+        {% block modernizr %}
+            <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        {% endblock modernizr %}
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        {% block extra_head %}
+        {% endblock extra_head %}
+
+        {% block amp_link %}
+        {% endblock amp_link %}
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -22,10 +41,22 @@
         <!-- Add your site or application content here -->
         <p>Hello world! This is HTML5 Boilerplate.</p>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- jQuery CDN fallback -->
+        <script>window.jQuery || document.write('<script src="{% static 'library/jquery-1.12.2.min.js' %}"><\/script>')</script>
+
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- Bootstrap CDN fallback -->
+        <script>$.fn.modal || document.write('<script src="{% static 'library/bootstrap.min.js' %}"><\/script>')</script>
+
+        <script>
+            $(document).ready(function() {
+                var bodyColor = $('body').css('color');
+                if(bodyColor != 'rgb(51, 51, 51)') {
+                    $("head").prepend('<link rel="stylesheet" href="{% static 'library/bootstrap.min.css' %} ">');
+                }
+            });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
