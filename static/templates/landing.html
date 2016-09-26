@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{#{% block main_content %}#}
+{##}
+{#    <p>Landing page</p>#}
+{##}
+{#{% endblock main_content %}#}
+
+{% block extra_js %}
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="{% static 'library/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'library/scrolling-nav.js' %}"></script>
+
+{% endblock extra_js %}
