@@ -18,8 +18,24 @@ header
   padding: 20px 0
   transition: padding .5s
 
+.navbar-default
+  border: none !important
+
+#page-top .navbar-toggle
+  border-color: white
+  &:hover
+    background-color: transparent
+
+.navbar-collapse
+  border: none !important
+
 .navbar-brand
   padding: 0
+  @media screen and (max-width: 768px)
+    padding-left: 20px
+
+#page-top .icon-bar
+  background-color: white
 
 .img-brand-collapse
   transform: scale(0.8)
@@ -34,24 +50,30 @@ header
 
 ul
   width: 50%
+  @media screen and (max-width: 768px)
+    width: 100%
 
-li
+#page-top li
   width: 20%
   text-align: center
+  @media screen and (max-width: 768px)
+    width: 100%
 
   // TODO: define better color schema later on
   $colors: red, orange, yellow, green, purple
   @for $i from 1 through length($colors)
     &:nth-child(#{$i+1})
       a:hover
-        color: nth($colors, $i)
+        color: nth($colors, $i) !important
 
-a
+#page-top a
   color: white
-  background-color: transparent !important
+  background-color: transparent
 
 footer
   background-color: black
   padding: 15px 0
   p
     color: white
+    @media screen and (max-width: 768px)
+      text-align: center
