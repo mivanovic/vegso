@@ -1,3 +1,57 @@
 html
   margin: 0
   padding: 0
+
+// TODO: section is here just for test
+section
+  height: 500px
+  width: 100%
+
+header
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('/static/images/background.png') 0 0 / cover
+  //background-size: cover
+  //background-attachment: scroll
+  height: 800px
+
+.navbar
+  background-color: transparent
+  padding: 20px 0
+  transition: padding .5s
+
+.navbar-brand
+  padding: 0
+
+.img-brand-collapse
+  transform: scale(0.8)
+  transition: all .5s ease-in-out
+
+.img-brand
+  transition: all .5s ease-in-out
+
+.top-nav-collapse
+  padding: 10px 0
+  background-color: black
+
+ul
+  width: 50%
+
+li
+  width: 20%
+  text-align: center
+
+  // TODO: define better color schema later on
+  $colors: red, orange, yellow, green, purple
+  @for $i from 1 through length($colors)
+    &:nth-child(#{$i+1})
+      a:hover
+        color: nth($colors, $i)
+
+a
+  color: white
+  background-color: transparent !important
+
+footer
+  background-color: black
+  padding: 15px 0
+  p
+    color: white

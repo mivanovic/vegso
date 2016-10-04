@@ -2,4 +2,58 @@ html {
   margin: 0;
   padding: 0; }
 
+section {
+  height: 500px;
+  width: 100%; }
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("/static/images/background.png") 0 0/cover;
+  height: 800px; }
+
+.navbar {
+  background-color: transparent;
+  padding: 20px 0;
+  transition: padding 0.5s; }
+
+.navbar-brand {
+  padding: 0; }
+
+.img-brand-collapse {
+  transform: scale(0.8);
+  transition: all 0.5s ease-in-out; }
+
+.img-brand {
+  transition: all 0.5s ease-in-out; }
+
+.top-nav-collapse {
+  padding: 10px 0;
+  background-color: black; }
+
+ul {
+  width: 50%; }
+
+li {
+  width: 20%;
+  text-align: center; }
+  li:nth-child(2) a:hover {
+    color: red; }
+  li:nth-child(3) a:hover {
+    color: orange; }
+  li:nth-child(4) a:hover {
+    color: yellow; }
+  li:nth-child(5) a:hover {
+    color: green; }
+  li:nth-child(6) a:hover {
+    color: purple; }
+
+a {
+  color: white;
+  background-color: transparent !important; }
+
+footer {
+  background-color: black;
+  padding: 15px 0; }
+  footer p {
+    color: white; }
+
 /*# sourceMappingURL=base.css.map */
