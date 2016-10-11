@@ -3,7 +3,7 @@ html {
   padding: 0; }
 
 section {
-  height: 500px;
+  height: auto;
   width: 100%;
   padding: 50px 0; }
 
@@ -71,15 +71,28 @@ ul {
   #page-top li:nth-child(3) a:hover {
     color: orange !important; }
   #page-top li:nth-child(4) a:hover {
-    color: #fed136 !important; }
-  #page-top li:nth-child(5) a:hover {
     color: green !important; }
+  #page-top li:nth-child(5) a:hover {
+    color: #fed136 !important; }
   #page-top li:nth-child(6) a:hover {
     color: purple !important; }
 
-#page-top a {
+#page-top a:focus {
+  outline: none; }
+#page-top a:hover {
+  text-decoration: none; }
+
+#page-top nav a {
   color: white;
   background-color: transparent; }
+
+.section-title {
+  text-align: center;
+  padding-bottom: 10px; }
+
+.section-subtitle {
+  text-align: center;
+  padding-bottom: 40px; }
 
 #contact {
   height: auto; }
@@ -89,12 +102,6 @@ ul {
   #contact textarea {
     height: 236px;
     padding: 20px; }
-  #contact h2 {
-    text-align: center;
-    padding-bottom: 10px; }
-  #contact h4 {
-    text-align: center;
-    padding-bottom: 40px; }
 
 .form-group {
   margin-bottom: 25px; }
@@ -114,8 +121,70 @@ ul {
   .btn-xl:hover {
     color: white; }
 
-#most_popular {
+#reference {
   background-color: #f7f7f7; }
+  #reference .row {
+    padding: 0 100px; }
+
+.references-link {
+  min-height: 54px;
+  min-width: 226px;
+  display: inline-block; }
+
+.references-btn {
+  display: inherit;
+  color: white;
+  background-color: #008C29;
+  border: 1px solid #008C29;
+  padding: 17px 80px;
+  font-size: 16px;
+  border-radius: 3px;
+  text-transform: uppercase; }
+  .references-btn:hover {
+    color: white; }
+
+.project-item {
+  text-align: center;
+  margin-bottom: 40px; }
+  .project-item img {
+    display: block;
+    margin: 0 auto;
+    height: 260px;
+    width: 260px;
+    border: 8px solid white; }
+
+figcaption {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black; }
+
+.modal-content {
+  min-height: 100%; }
+
+.close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer; }
+  .close-modal .close-btn {
+    height: 75px;
+    width: 1px;
+    background-color: #222; }
+  .close-modal .lr {
+    margin-left: 35px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 1051; }
+    .close-modal .lr .rl {
+      transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      z-index: 1052; }
 
 footer .copyright {
   background-color: black;
