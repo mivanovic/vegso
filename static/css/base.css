@@ -41,6 +41,10 @@ header {
   .more-btn:hover {
     color: black;
     background-color: white; }
+  .more-btn:focus {
+    color: white;
+    background-color: transparent;
+    text-decoration: none; }
 
 .navbar {
   background-color: transparent;
@@ -121,8 +125,12 @@ ul {
 .section-subtitle {
   text-align: center;
   padding-bottom: 40px;
-  line-height: 2.1;
-  text-align: center; }
+  line-height: 2.1; }
+
+#about {
+  background: #e8e8e8; }
+  #about img {
+    margin: 0 auto; }
 
 #contact {
   height: auto; }
@@ -151,8 +159,10 @@ ul {
   .btn-xl:hover {
     color: white; }
 
-#services div div:last-child {
-  border-right: none; }
+#services {
+  padding-bottom: 0px; }
+  #services div div:last-child {
+    border-right: none; }
 
 .second div {
   border-bottom: none; }
@@ -170,7 +180,9 @@ ul {
   border-color: #dbdbdb;
   border-style: dashed; }
   .service-block img {
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 200px;
+    height: 200px; }
   .service-block figcaption {
     font-size: 24px; }
   @media screen and (max-width: 1200px) {
@@ -188,9 +200,66 @@ ul {
   text-align: center; }
 
 #reference {
-  background-color: #f7f7f7; }
-  #reference .row {
-    padding: 0 100px; }
+  background: #e8e8e8;
+  padding-bottom: 0px; }
+  #reference .container {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    #reference .container .row {
+      margin: 0;
+      padding: 0; }
+
+.ref {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  .ref img {
+    width: 100%; }
+  .ref:hover {
+    transition: all 500ms ease-in-out; }
+    .ref:hover .overlay {
+      opacity: 1; }
+    .ref:hover .view-btn {
+      opacity: 1;
+      bottom: 50%; }
+
+.view-btn {
+  position: absolute;
+  display: block;
+  margin-left: -25px;
+  bottom: 25%;
+  margin-bottom: -25px;
+  z-index: 20;
+  left: 50%;
+  opacity: 0;
+  transition: all 500ms ease-in-out; }
+  @media screen and (max-width: 1200px) {
+    .view-btn {
+      opacity: 1; } }
+
+.fa {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  color: red;
+  font-size: 1.3em; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.70196);
+  transition: all 500ms ease-in-out; }
 
 .references-link {
   min-height: 54px;

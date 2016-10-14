@@ -13,6 +13,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
         {% block modernizr %}
@@ -70,13 +71,13 @@
                                 <a class="page-scroll text-uppercase" href="#services" data-toggle="collapse" data-target=".navbar-collapse.in">Usluge</a>
                             </li>
                             <li>
-                                <a class="page-scroll text-uppercase" href="#reference" data-toggle="collapse" data-target=".navbar-collapse.in">Reference</a>
-                            </li>
-                            <li>
                                 <a class="page-scroll text-uppercase" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Kontakt</a>
                             </li>
                             <li>
-                                <a class="page-scroll text-uppercase" href="{% url 'blog' %}">Blog</a>
+                                <a class="page-scroll text-uppercase" href="{% url 'references' %}">Reference</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll text-uppercase" href="#">Blog</a>
                             </li>
                         </ul>
                     </div>
