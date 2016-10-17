@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block navbar-links %}
+
+    <li class="hidden">
+        <a class="page-scroll" href="#page-top"></a>
+    </li>
+    <li>
+        <a class="page-scroll text-uppercase" href="{% url 'index' %}#about">O nama</a>
+    </li>
+    <li>
+        <a class="page-scroll text-uppercase" href="{% url 'index' %}#services">Usluge</a>
+    </li>
+    <li>
+        <a class="page-scroll text-uppercase" href="{% url 'index' %}#contact">Kontakt</a>
+    </li>
+    <li>
+        <a class="text-uppercase" href="#">Reference</a>
+    </li>
+    <li>
+        <a class="text-uppercase" href="#">Blog</a>
+    </li>
+
+{% endblock navbar-links %}
+
+{% block main_content %}
+
+    <section id="references_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title">Lorem Ipsum</h2>
+                </div>
+            </div>
+            <div class="row refs">
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="/static/images/img3.jpg">
+                    <div class="ref-item"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock main_content %}
+
+{% block extra_js %}
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="{% static 'library/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'library/scrolling-nav.js' %}"></script>
+
+{% endblock extra_js %}

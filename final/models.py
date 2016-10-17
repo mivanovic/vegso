@@ -11,6 +11,5 @@ class References(models.Model):
 	title = models.CharField(null=False, max_length=CODE_TEXT_LENGTH)
 	description = models.CharField(max_length=LONG_TEXT_LENGTH)
 	location = models.CharField(max_length=CODE_TEXT_LENGTH)
-	complexity = models.IntegerField(default=1, validators=[MaxValueValidator(100), MinValueValidator(1))
-	# TODO: add multiple choices for labels
+	complexity = models.IntegerField(default=1, validators=[MaxValueValidator(100), MinValueValidator(1)])
 

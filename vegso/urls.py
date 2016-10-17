@@ -20,7 +20,7 @@ from django.contrib import admin
 from final import views
 
 urlpatterns = [
-    url(r'^$', views.index),
+    url(r'^$', views.index, name='index'),
     url(r'^reference$', views.references, name='references'),
     url(r'^blog/$', views.blog, name='blog'),
 

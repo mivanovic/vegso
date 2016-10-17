@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    if($(".navbar").offset().top > 50) {
+    if($(".navbar").offset().top > 50 || window.location.pathname != '/') {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         $(".img-brand").addClass("img-brand-collapse");
     }
@@ -7,12 +7,14 @@ $( document ).ready(function() {
 
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-        $(".img-brand").addClass("img-brand-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        $(".img-brand").removeClass("img-brand-collapse");
+    if (window.location.pathname == '/') {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+            $(".img-brand").addClass("img-brand-collapse");
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+            $(".img-brand").removeClass("img-brand-collapse");
+        }
     }
 });
 

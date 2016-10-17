@@ -324,6 +324,50 @@ figcaption
       -webkit-transform: rotate(90deg)
       z-index: 1052
 
+#references_page
+  padding-top: 100px
+
+.refs
+  div
+    padding: 0
+    height: 250px
+    position: relative
+    display: inline-block
+    overflow: hidden
+    $colors1: #b71c1c, #d32f2f, #f44336, #e57373, #880E4F, #C2185B, #E91E63, #F06292, #4A148C, #7B1FA2, #9C27B0, #BA68C8, #311B92, #512DA8, #673AB7, #9575CD, #1A237E, #303F9F, #3F51B5, #7986CB, #0D47A1, #1976D2, #2196F3, #64B5F6, #01579B, #0288D1, #03A9F4, #4FC3F7
+    @for $i from 1 through length($colors1)
+      &:nth-child(#{$i})
+        .ref-item
+          background-color: nth($colors1, $i) !important
+    img
+      position: absolute
+      top: 50%
+      min-height: 100%
+      max-height: 100%
+      max-width: 100%
+      border: 3px solid white
+      display: block
+      left: 50%
+      -webkit-transform: translate(-50%, -50%)
+      min-width: 100%
+      //border: 3px solid white
+  //img
+    //max-width: 100%
+    //border: 3px solid white
+
+.ref-item
+  position: absolute
+  height: 100%
+  border: 3px solid white
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 20
+  opacity: 0.8
+  transition: opacity 0.8s ease
+  &:hover
+    opacity: 0
+
 footer
   .copyright
     background-color: black

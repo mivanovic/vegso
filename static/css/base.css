@@ -321,6 +321,96 @@ figcaption {
       -webkit-transform: rotate(90deg);
       z-index: 1052; }
 
+#references_page {
+  padding-top: 100px; }
+
+.refs div {
+  padding: 0;
+  height: 250px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden; }
+  .refs div:nth-child(1) .ref-item {
+    background-color: #b71c1c !important; }
+  .refs div:nth-child(2) .ref-item {
+    background-color: #d32f2f !important; }
+  .refs div:nth-child(3) .ref-item {
+    background-color: #f44336 !important; }
+  .refs div:nth-child(4) .ref-item {
+    background-color: #e57373 !important; }
+  .refs div:nth-child(5) .ref-item {
+    background-color: #880E4F !important; }
+  .refs div:nth-child(6) .ref-item {
+    background-color: #C2185B !important; }
+  .refs div:nth-child(7) .ref-item {
+    background-color: #E91E63 !important; }
+  .refs div:nth-child(8) .ref-item {
+    background-color: #F06292 !important; }
+  .refs div:nth-child(9) .ref-item {
+    background-color: #4A148C !important; }
+  .refs div:nth-child(10) .ref-item {
+    background-color: #7B1FA2 !important; }
+  .refs div:nth-child(11) .ref-item {
+    background-color: #9C27B0 !important; }
+  .refs div:nth-child(12) .ref-item {
+    background-color: #BA68C8 !important; }
+  .refs div:nth-child(13) .ref-item {
+    background-color: #311B92 !important; }
+  .refs div:nth-child(14) .ref-item {
+    background-color: #512DA8 !important; }
+  .refs div:nth-child(15) .ref-item {
+    background-color: #673AB7 !important; }
+  .refs div:nth-child(16) .ref-item {
+    background-color: #9575CD !important; }
+  .refs div:nth-child(17) .ref-item {
+    background-color: #1A237E !important; }
+  .refs div:nth-child(18) .ref-item {
+    background-color: #303F9F !important; }
+  .refs div:nth-child(19) .ref-item {
+    background-color: #3F51B5 !important; }
+  .refs div:nth-child(20) .ref-item {
+    background-color: #7986CB !important; }
+  .refs div:nth-child(21) .ref-item {
+    background-color: #0D47A1 !important; }
+  .refs div:nth-child(22) .ref-item {
+    background-color: #1976D2 !important; }
+  .refs div:nth-child(23) .ref-item {
+    background-color: #2196F3 !important; }
+  .refs div:nth-child(24) .ref-item {
+    background-color: #64B5F6 !important; }
+  .refs div:nth-child(25) .ref-item {
+    background-color: #01579B !important; }
+  .refs div:nth-child(26) .ref-item {
+    background-color: #0288D1 !important; }
+  .refs div:nth-child(27) .ref-item {
+    background-color: #03A9F4 !important; }
+  .refs div:nth-child(28) .ref-item {
+    background-color: #4FC3F7 !important; }
+  .refs div img {
+    position: absolute;
+    top: 50%;
+    min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    border: 3px solid white;
+    display: block;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    min-width: 100%; }
+
+.ref-item {
+  position: absolute;
+  height: 100%;
+  border: 3px solid white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  opacity: 0.8;
+  transition: opacity 0.8s ease; }
+  .ref-item:hover {
+    opacity: 0; }
+
 footer .copyright {
   background-color: black;
   padding: 15px 0; }

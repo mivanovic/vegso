@@ -61,24 +61,28 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="final-navbar">
                         <ul class="nav navbar-nav navbar-right col-sm-8 col-md-6">
-                            <li class="hidden">
-                                <a class="page-scroll" href="#page-top"></a>
-                            </li>
-                            <li>
-                                <a class="page-scroll text-uppercase" href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">O nama</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll text-uppercase" href="#services" data-toggle="collapse" data-target=".navbar-collapse.in">Usluge</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll text-uppercase" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Kontakt</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll text-uppercase" href="{% url 'references' %}">Reference</a>
-                            </li>
-                            <li>
-                                <a class="page-scroll text-uppercase" href="#">Blog</a>
-                            </li>
+                            {% block navbar-links %}
+
+                                <li class="hidden">
+                                    <a class="page-scroll" href="#page-top"></a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll text-uppercase" href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">O nama</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll text-uppercase" href="#services" data-toggle="collapse" data-target=".navbar-collapse.in">Usluge</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll text-uppercase" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Kontakt</a>
+                                </li>
+                                <li>
+                                    <a class="text-uppercase" href="{% url 'references' %}">Reference</a>
+                                </li>
+                                <li>
+                                    <a class="text-uppercase" href="#">Blog</a>
+                                </li>
+
+                            {% endblock navbar-links %}
                         </ul>
                     </div>
                 </div>

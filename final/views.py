@@ -6,7 +6,7 @@ def index(request):
 
 
 def references(request):
-	return render(request, 'landing.html')
+	return render(request, 'references.html')
 
 
 def blog(request):
