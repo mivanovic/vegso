@@ -21,6 +21,7 @@ from final import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^reference/(?P<id>.*?)/?$', views.ref_item, name='ref_item'),
     url(r'^reference$', views.references, name='references'),
     url(r'^blog/$', views.blog, name='blog'),
 
