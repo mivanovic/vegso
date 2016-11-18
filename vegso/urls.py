@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^reference/(?P<id>.*?)/?$', views.ref_item, name='ref_item'),
     url(r'^reference$', views.references, name='references'),
     url(r'^blog/$', views.blog, name='blog'),
+    url(r'^contact/$', views.send_email, name='send_email'),
 
     url(r'^admin/', admin.site.urls),
 ]

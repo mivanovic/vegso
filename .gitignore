@@ -91,3 +91,4 @@ ENV/
 node_modules/
 gulpfile.js
 package.json
+prod_settings.py

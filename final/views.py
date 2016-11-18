@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
+from django.core.mail import send_mail
+from django.conf import settings
 
 
 def index(request):
@@ -15,3 +17,22 @@ def ref_item(request, id):
 
 def blog(request):
 	return render(request, 'landing.html')
+
+
+def send_email(request):
+	if request.method == 'POST':
+
+		name = request.POST['name']
+		email = request.POST['email']
+		phone = request.POST['phone']
+		message = request.POST['message']
+
+		send_mail(
+			'www.final-st.hr',  # subject
+			message + '\n\n Ime: {} \n Tel: {} \n Email: {}'.format(name, phone, email),
+			email,  # from
+			[settings.EMAIL_HOST_USER],  # to
+			fail_silently=False,
+		)
+
+		return HttpResponse('')

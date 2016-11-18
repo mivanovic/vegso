@@ -123,3 +123,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+
+
+# Email settings
+# https://docs.djangoproject.com/en/1.10/topics/email/
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'USER'
+EMAIL_HOST_PASSWORD = 'PASSWORD'
+EMAIL_PORT = 587
